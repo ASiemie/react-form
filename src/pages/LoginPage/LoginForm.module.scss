@@ -1,7 +1,111 @@
-@use '../../variables' as var;
+@use "../../variables" as var;
+@use "sass:math";
+
+.errorContainer {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  .errorMessage {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var.$colorError;
+    padding-left: 0.5rem;
+  }
+}
+
+.link {
+  color: var.$colorBlue;
+  text-decoration: underline;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+.text {
+  color: var.$colorDarkGrey;
+  line-height: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
 
 .LoginForm {
-    padding: var.$contentMargin+px;
+  padding: 80px 80px 40px 80px;
+  margin-top: 64px;
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+
+    .formTitle {
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      color: var.$colorDarkGrey;
+      line-height: 120%;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+      color: var.$colorBlack;
+      line-height: 1.25rem;
+      letter-spacing: 0.012em;
+    }
+  }
+
+  .input {
+    width: 25rem;
+    margin-bottom: 1.5rem;
+    border: 1.5px solid var.$colorInfo;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    line-height: 1.5rem;
+
+    &.error {
+      border: 1.5px solid var.$colorError;
+    }
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: var.$colorSilver;
+    }
+  }
+
+  .passwordContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  .submitButton {
+    padding: 0.5rem 2.5rem;
+    font-weight: 600;
+    color: var.$colorWhite;
+    background-color: var.$colorBlue;
+    align-self: flex-end;
+    border-radius: 0.25rem;
+    border: none;
+    line-height: 1.5rem;
+    margin-top: 4.5rem;
+  }
+}
+
+.divider {
+  border: 0.75px solid var.$colorLightGrey;
+  margin: 40px -80px 40px -80px;
 }
 
 // TODO: Your code

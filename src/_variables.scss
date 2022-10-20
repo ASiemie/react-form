@@ -1,20 +1,25 @@
-$colorWhite:                #FFFFFF;
-$colorLightSilver:          #F8F9FA;
-$colorSilver:               #7E94A2;
+$colorWhite: #ffffff;
+$colorLightSilver: #f8f9fa;
+$colorSilver: #7e94a2;
+$colorDarkGrey: #3a495f;
+$colorBlack: #0f2633;
+$colorBlue: #3d8ebb;
+$colorLightGrey: #f2f7fa;
 
-$colorError:                #C94F4F;
-$colorInfo:                 #D4E2EA;
-$colorSuccess:              #44998F;
+$colorError: #c94f4f;
+$colorInfo: #d4e2ea;
+$colorSuccess: #44998f;
 
-$colorErrorText:            $colorWhite;
-$colorInfoText:             $colorSilver;
-$colorSuccessText:          $colorWhite;
+$colorErrorText: $colorWhite;
+$colorInfoText: $colorSilver;
+$colorSuccessText: $colorWhite;
 
-$backgroundColor:           $colorLightSilver;
-$panelBackgroundColor:      $colorWhite;
+$backgroundColor: $colorLightSilver;
+$panelBackgroundColor: $colorWhite;
 
-$contentMargin:             26;
+$contentMargin: 26;
+$largeMargin: 80;
 
-$shadowSize:                4;
-$shadowOpacity:             0.05;
-$borderRadius:              4;
+$shadowSize: 4;
+$shadowOpacity: 0.05;
+$borderRadius: 4;

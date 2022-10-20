@@ -1,7 +1,14 @@
-@use './variables' as var;
+@use "./variables" as var;
 @import "./typography";
 
 body {
-    background-color: var.$backgroundColor;
-    font-family: Poppins, sans-serif;
+  background-color: var.$backgroundColor;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
